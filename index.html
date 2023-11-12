@@ -3,9 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <title>Hi, I'm Claudio La Gona</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <title>Claudio La Gona | Junior Front-End Developer</title>
+    <meta
+      name="description"
+      content="Hi, I'm Claudio La Gona, a Junior Front-End Developer based in Palermo."
+    />
+    <meta
+      name="keywords"
+      content="Junior Front-End Developer, HTML, CSS, JavaScript, React, Front-End Developer"
+    />
+    <meta name="author" content="Claudio La Gona" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Claudio La Gona | Junior Front-End Developer"
+    />
+    <meta property="og:url" content="https://www.claudiolagona.com" />
+    <meta property="og:image" content="assets/images/Claudio.jpg" />
     <!--Box Icons-->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -52,6 +68,7 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
 
         <span class="active-nav"></span>
@@ -62,9 +79,9 @@
     <section class="home" id="home">
       <div class="home-container">
         <div class="home-content">
-          <h1>Hi, I'm <span>Claudio La Gona</span></h1>
+          <p class="main-title">Hi, I'm <span>Claudio La Gona</span></p>
           <div class="text-animate">
-            <h3>Frontend Developer</h3>
+            <h1>Junior Front-End Developer</h1>
           </div>
           <p>
             Always been keen on technology and eager to find out how things
@@ -73,9 +90,7 @@
           </p>
 
           <div class="btn-box">
-            <a onclick="window.open('/CV/CV_LaGona_2023.pdf')" class="btn"
-              >Download My CV</a
-            >
+            <a href="cv.html" class="btn">Download My CV</a>
             <a href="#contact" class="btn">Contact Me</a>
           </div>
         </div>
@@ -84,10 +99,10 @@
       </div>
 
       <div class="home-social">
-        <a href="https://www.linkedin.com/in/claudio-lagona/"
+        <a href="https://www.linkedin.com/in/claudio-lagona/" target="_blank"
           ><i class="bx bxl-linkedin"></i
         ></a>
-        <a href="https://github.com/claudiolagona"
+        <a href="https://github.com/claudiolagona" target="_blank"
           ><i class="bx bxl-github"></i
         ></a>
       </div>
@@ -99,7 +114,7 @@
       <h2 class="heading">About <span>Me</span></h2>
 
       <div class="about-img">
-        <img src="images/Claudio.jpg" alt="Claudio" />
+        <img src="assets/images/Claudio.jpg" alt="Claudio" />
         <span class="circle-spin"></span>
       </div>
 
@@ -127,19 +142,19 @@
           <div class="skills-box">
             <div class="skills-content">
               <div class="progress">
-                <h3>HTML <span>85%</span></h3>
+                <h4>HTML <span>85%</span></h4>
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
-                <h3>CSS <span>85%</span></h3>
+                <h4>CSS <span>85%</span></h4>
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
-                <h3>JavaScript <span>55%</span></h3>
+                <h4>JavaScript <span>55%</span></h4>
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
-                <h3>React <span>40%</span></h3>
+                <h4>React <span>40%</span></h4>
                 <div class="bar"><span></span></div>
               </div>
             </div>
@@ -152,19 +167,19 @@
           <div class="skills-box">
             <div class="skills-content">
               <div class="progress">
-                <h3>PHP <span>50%</span></h3>
+                <h4>PHP <span>50%</span></h4>
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
-                <h3>MySQL <span>65%</span></h3>
+                <h4>MySQL <span>65%</span></h4>
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
-                <h3>Java <span>20%</span></h3>
+                <h4>GitHub <span>50%</span></h4>
                 <div class="bar"><span></span></div>
               </div>
               <div class="progress">
-                <h3>Photoshop <span>60%</span></h3>
+                <h4>Photoshop <span>60%</span></h4>
                 <div class="bar"><span></span></div>
               </div>
             </div>
@@ -173,6 +188,42 @@
       </div>
     </section>
     <!--End Skills-->
+
+    <!--Projects-->
+    <section class="projects" id="projects">
+      <h2 class="heading">My <span>Projects</span></h2>
+
+      <div class="projects-row">
+        <div class="project-column">
+          <a href="https://www.saviorbarber.it" target="_blank">
+            <img
+              src="/assets/images/savior-barber.png"
+              alt="Savior Barber Website"
+            />
+          </a>
+          <h3>Savior Barber</h3>
+        </div>
+        <div class="project-column">
+          <a href="https://thebestcounterintown.netlify.app/" target="_blank">
+            <img
+              src="/assets/images/counter.png"
+              alt="The Best Counter in Town"
+            />
+          </a>
+          <h3>The Best Counter in Town</h3>
+        </div>
+        <div class="project-column">
+          <a href="#">
+            <img
+              src="/assets/images/claudiolagona.png"
+              alt="Claudio La Gona Website"
+            />
+          </a>
+          <h3>Claudio La Gona</h3>
+        </div>
+      </div>
+    </section>
+    <!--End Projects-->
 
     <!--Contact-->
     <section class="contact" id="contact">
@@ -223,7 +274,6 @@
 
         <div class="textarea-field">
           <textarea
-            name=""
             id="message"
             cols="30"
             rows="10"
@@ -246,10 +296,10 @@
     <footer class="footer">
       <div class="footer-text">
         <div class="home-social footer-social">
-          <a href="https://www.linkedin.com/in/claudio-lagona/"
+          <a href="https://www.linkedin.com/in/claudio-lagona/" target="_blank"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="https://github.com/claudiolagona"
+          <a href="https://github.com/claudiolagona" target="_blank"
             ><i class="bx bxl-github"></i
           ></a>
         </div>
@@ -309,7 +359,7 @@
       </div>
     </footer>
     <!--End Footer-->
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
