@@ -49,6 +49,23 @@ function SendMail() {
     email_subject: document.getElementById("email_subject").value,
     message: document.getElementById("message").value,
   };
+
+  if (
+    params.from_name == "" ||
+    params.email_id == "" ||
+    params.phone_number == "" ||
+    params.email_subject == "" ||
+    params.message == ""
+  ) {
+    alert("Riempi ogni campo");
+    return;
+  }
+
+  if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/.test(params.email_id)) {
+    alert("L'indirizzo email che hai inserito non e' valido");
+    return;
+  }
+
   emailjs
     .send("service_y3faixn", "template_idszpj9", params)
     .then(function (res) {
